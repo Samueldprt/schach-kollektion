@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kollektion</title>
+        <link rel="shortcut icon" type="x-icon" href="./images/logo-creme.png">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <a href="file:///F:/Dateien/Coding%20Projekts/HTML/schach-kollektion/index.html"><img class="logo" src="./images/logo.png"></a>
+            <a href="file:///F:/Dateien/Coding%20Projekts/HTML/schach-kollektion/index.html"><h1 class="titel">Schach Kollektion</h1></a>
+             <ul class="menü-container">
+                <li class="menü"><a href="#"> Menü</a>
+                    <ul class="dropdown-container-1">
+                        <div class="option-container"><li class="dropdown-option"><a href="file:///F:/Dateien/Coding%20Projekts/HTML/schach-kollektion/kollektion.html">Kollektion</a></li></div>
+                        <div class="option-container"><li class="dropdown-option"><a href="#">Neuheiten</a></li></div>
+                        <div class="option-container"><li class="dropdown-option"><a href="#">Worldwide</a></li></div>
+                        <div class="option-container"><li class="dropdown-option"><a href="#">Kontakt</a></li></div>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="main-container">
+            <div class="kollektion-banner-container">
+                <img class="kollektion-banner-img" src="images/collection/Regence Calvert Selenus LotusSeries/Selenus usw/NIK_7347.JPG">
+            </div>
+            <div class="kollektion-headline-container">
+                <p class="kollektion-headline">Kollektion</p>
+            </div>
+            <div class="dropdown-button-container">
+                <button onclick="filterStyleDropDown();closeMaterial()" class="dropbtn"> <p class="dropdown-text">Stil</p></button>
+                <button onclick="filterMaterialDropDown();closeStyle()" class="filterbtn"> <p class="dropdown-text">Material</p></button>
+                
+            </div>  
+            <div id="styleDropdown" class="dropdown-container">
+                <div class="dropdown-content-container" id="myBtnContainer">
+                    <button class="style-btn active" onclick="filterSelection('all')">Alle</button>
+                    <button class="style-btn" onclick="filterSelection('modern')">Modern</button>
+                    <button class="style-btn" onclick="filterSelection('klassisch')">Klassisch</button>
+                    <button class="style-btn" onclick="filterSelection('ausergewöhnlich')">Außergewöhnlich</button>
+                    <button class="style-btn" onclick="filterSelection('fantasy')">Fantasy</button>
+                    <button class="style-btn" onclick="filterSelection('franchise')">Franchise</button>
+                    <button class="style-btn" onclick="filterSelection('alt')">Alt</button>
+                    <button class="style-btn" onclick="filterSelection('kulturell')">Kulturell</button>
+                    <button class="style-btn" onclick="filterSelection('andere')">Andere</button>
+                </div>
+            </div>
+            <div id="materialDropdown" class="dropdown-container">
+                <div class="dropdown-content-container" id="materialBtnContainer">
+                    <button class="material-btn" onclick="filterSelection('all')">Alle</button>
+                    <button class="material-btn" onclick="filterSelection('holz')">Holz</button>
+                    <button class="material-btn" onclick="filterSelection('stein')">Stein</button>
+                    <button class="material-btn" onclick="filterSelection('glas')">Glas</button>
+                    <button class="material-btn" onclick="filterSelection('knochen')">Knochen</button>
+                    <button class="material-btn" onclick="filterSelection('kunststoff')">Kunststoff</button>
+                    <button class="material-btn" onclick="filterSelection('metall')">Metall</button>
+                    <button class="material-btn" onclick="filterSelection('andereMaterial')">Andere</button>
+                </div>
+            </div>
+            <div class="dropdown-content-underline"></div>
+            <div class="sort-button-container">
+                <button onclick="sortDropDown()" class="sortbtn"><p class="dropdown-text">Sortieren</p></button>
+            </div>
+            <div class="sort-dropdown-container" id="sortDropdown">
+                <ul class="sort-dropdown">
+                    <li class="sort-dropdown-item"><button class="sort-button selected" id="sortABCButton">Name aufsteigend</button></li>
+                    <li class="sort-dropdown-item"><button class="sort-button" id="sortCBAButton">Name absteigend</button></li>
+                    <li class="sort-dropdown-item"><button class="sort-button" id="sortOldButton" >Alter aufsteigned</button></li>
+                    <li class="sort-dropdown-item"><button class="sort-button" id="sortNewButton">Alter absteigend</button></li>
+                </ul>
+            </div>
+            <div class="kollektion-items-container" id="kollektionItemsContainer">
+                <div class="filterDiv klassisch holz" id="baden ">
+                    <div class="kollektion-item">
+                        <a href="file:///F:/Dateien/Coding%20Projekts/HTML/schach-kollektion/baden-vs-w%C3%BCrttemberg.html"> <img class="item-image" src="images/collection/Baden vs Württemberg/DSC05735.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="file:///F:/Dateien/Coding%20Projekts/HTML/schach-kollektion/baden-vs-w%C3%BCrttemberg.html"><p class="item-name">Baden vs Württemberg</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv klassisch knochen" id="americanOpenHead ">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/American openhead Camelbone/DSC05268.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">American Openhead</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv ausergewöhnlich kunststoff" id="amerikaBürgerkrieg 1999">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Amerika Bürgerkrieg/DSC05309.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Amerika Bürgerkrieg</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv modern holz" id="berlinerSchach ">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Berliner Schach Modern/DSC04459.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Berliner Schach</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv franchise modern kunststoff" id="chupaChups ">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/ChupaChups Haring Haba Lego/DSC04755.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Chupa Chups</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv modern kunststoff" id="keithHarring">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/ChupaChups Haring Haba Lego/DSC04789.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Keith Harring</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv andere holz" id="habaSchach">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/ChupaChups Haring Haba Lego/DSC04818.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Haba Schach</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv franchise fantasy kunststoff" id="legoRitterSchach">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/ChupaChups Haring Haba Lego/DSC04903.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Lego Ritter Chess</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv ausergewöhnlich holz" id="dreierSchach">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/DreierSchach ViererSchach Byzantinisch/DSC05424.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Dreier Schach</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv ausergewöhnlich holz" id="viererSchach">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/DreierSchach ViererSchach Byzantinisch/DSC05520.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Vierer Schach</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv kulturell alt holz" id="folkLore">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Folklore/DSC05146.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Folklore</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv andere kunststoff" id="gartenSchach">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Gartenschach/DSC06078.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Garten Schach</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv klassisch stein" id="granitSchach">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Granit Stein Glas/DSC05096.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Granit Schach</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv klassisch stein" id="mamorSchach">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Granit Stein Glas/DSC05099.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Mamor Schach</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv klassisch stein glas" id="steinGlasSchach">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Granit Stein Glas/DSC05237.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Stein/Glas Schach</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv ausergewöhnlich glas" id="schnapsGlasSchach">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Granit Stein Glas/DSC05410.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Schnapsglas Schach</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv alt holz ausergewöhnlich" id="handgeschnitzSammlung">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Handgeschnitzt/DSC02776.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Handgeschnitzte Sammlung</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv franchise fantasy kunststoff" id="harryPotter">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Herr der Ringe Harry Potter Starwars/Harry Potter/DSC05684.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Harry Potter</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv fantasy franchise metall" id="herrDerRinge">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Herr der Ringe Harry Potter Starwars/Herr der Ringe 1/DSC09335.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Herr der Ringe</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv fantasy franchise kunststoff" id="herrDerRinge">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Herr der Ringe Harry Potter Starwars/Herr der Ringe 2/DSC05958.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Herr der Ringe</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv fantasy franchise kunststoff" id="starWars">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Herr der Ringe Harry Potter Starwars/Star Wars/DSC05585.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Star Wars</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv alt Kulturell holz" id="afrikaSammlung">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Inka Asien Afrika/Afrika/20231013_100853.jpg"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Afrika Sammlung</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv alt kulturell holz stein kunststoff" id="asienSammlung">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Inka Asien Afrika/Asien/DSC05651.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Asien Sammlung</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv alt kulturell stein" id="inkaSammlung">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Inka Asien Afrika/Inka/DSC04861.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Inka Sammlung</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv alt stein kulturell" id="isleOfLewis">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Isle of Lewis/DSC05218.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Isle of lewis</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv franchise fantasy kunststoff" id="legoHarryPotter">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/LEGO/20210918_123601.jpg"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Lego Harry Potter</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv holz klassisch" id="calvert">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Regence Calvert Selenus LotusSeries/Calvert/DSC05193.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Calvert</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv holz klassisch" id="lotus">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Regence Calvert Selenus LotusSeries/Lotus Series/DSC04979.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Lotus Serie</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv holz klassisch alt" id="regence">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Regence Calvert Selenus LotusSeries/Regence/DSC04970.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Regence</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv knochen ausergewöhnlich alt" id="selenus">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Regence Calvert Selenus LotusSeries/Selenus usw/NIK_7353.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Selenus</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv stein kunststoff" id="ritterSammlung">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Ritter/DSC05300.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Ritter Sammlung</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv holz ausergewöhnlich" id="rundRosenholz">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Rund Rosenholz/DSC05210.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Rund Rosenholz</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv andere holz" id="schachteln">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Schach-tel/20231008_145624.jpg"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Schach-teln</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv klassisch holz" id="staunton">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Staunton/DSC04444.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Staunton</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv kulturell ausergewöhnlich alt holz kunststoff knochen" id="ägypten">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Ägypten Griechische Mythologie/Ägypten/DSC02765.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Ägypten Sammlung</p></a>
+                    </div>    
+                </div>
+                <div class="filterDiv kulturell alt metall" id="griechischeMythologie">
+                    <div class="kollektion-item">
+                        <a href="#"> <img class="item-image" src="images/collection/Ägypten Griechische Mythologie/Griechisch/DSC02760.JPG"></a>
+                    </div>
+                    <div class="kollektion-item-name-container">
+                        <a class="kollektion-item-name" href="#"><p class="item-name">Griechische Mythologie</p></a>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div class="legal-content-container">
+            <div class="legal-content">
+                <div><a href="">Über Uns</a></div>
+                <div><a href="">Privacy Policy</a></div>
+                <div><a href="">Impressum</a></div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
