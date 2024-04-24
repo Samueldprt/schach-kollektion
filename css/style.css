@@ -718,7 +718,7 @@ text-align: center;
 .set-headline-text{
     color: #706557;
     font-family: Montserrat;
-    font-size: 25px;
+    font-size: 24px;
     margin-right: 250px;
     margin-top: 31px;
     line-height: 36px;
@@ -743,7 +743,6 @@ text-align: center;
 .set-image{
     display: block;
     object-fit: cover;
-    
     height: 300px;
     width: 430px;
     z-index: 1;
@@ -752,6 +751,21 @@ text-align: center;
 
 .set-image:hover{
     transform: scale(1.04);
+}
+
+.upright {
+    object-fit: contain;
+    background-color: rgb(4, 6, 34);
+}
+
+.upright-black{
+    object-fit: contain;
+    background-color: #000000;
+}
+
+.upright-grey{
+    object-fit: contain;
+    background-color: #777169;
 }
 
 /*legal Content Container*/
