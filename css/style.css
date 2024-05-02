@@ -718,15 +718,18 @@ text-align: center;
 .set-headline-text{
     color: #706557;
     font-family: Montserrat;
-    font-size: 24px;
-    margin-right: 250px;
+    font-size: 27px;
+    margin-right: 165px;
     margin-top: 31px;
-    line-height: 36px;
+    line-height: 37px;
+    letter-spacing: 1px;
 }
 
 .dreier-schach-headline-image{
     object-position: 50% 99%;
 }
+
+
 
 /*Set Seite -> Grid*/
 
