@@ -725,10 +725,6 @@ text-align: center;
     letter-spacing: 1px;
 }
 
-.dreier-schach-headline-image{
-    object-position: 50% 99%;
-}
-
 
 
 /*Set Seite -> Grid*/
@@ -780,6 +776,7 @@ text-align: center;
 /*legal Content Container*/
 
 .legal-content-container{
+    margin-top: 20px;
     background-color: #EBE3D5;
     padding-top: 2px;
     padding-bottom: 3px;
