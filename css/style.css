@@ -107,7 +107,7 @@ nav ul li{
 
 nav ul li a{    /*Menü*/
     color: #776B5D;
-    font-family: libre baskerville;
+    font-family: Rubik;
     font-size: 24px;
     font-weight: 400;
     text-decoration: none;
@@ -681,12 +681,92 @@ text-align: center;
 }
 
 
+/*Sub Kollektion Pages -> Headline*/
+
+.sub-kollektion-headline-container{
+    justify-content: center;
+    width: auto;
+}
+
+.sub-kollektion-headline-image{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 50% 36%;
+}
+
+.sub-kollektion-headline-titel{
+    display: flex;
+    justify-content: center;
+    margin-top: -208px;
+    margin-bottom: 197px;
+}
+
+.sub-kollektion-headline-titel p{
+    font-family: Rubik;
+    font-size: 105px;
+    letter-spacing: 8px;
+    color: white;
+    background: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 6px #000000;
+}
+
+/*Sub Kollektion Pages -> Grid*/
+
+.sub-kollektion-container{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 60px;
+    margin-left: 54px;
+    margin-right: 54px;
+    margin-bottom: 41px;
+}
+
+.sub-kollektion-empty-image-container{
+    height: 300px;
+    width: 430px;
+    margin-bottom: 27px;
+}
+
+.sub-kollektion-image-container{
+    overflow: hidden;
+    margin-bottom: 27px;
+}
+
+.sub-kollektion-image{
+    display: block;
+    object-fit: cover;
+    height: 300px;
+    width: 430px;
+    z-index: 1;
+    transition: transform .4s ease;
+}
+
+/*.sub-kollektion-image:hover{
+    transform: scale(1.04);
+}       Image Preview Zoom, kann jederzeit wieder aktiviert werden*/
+
+.sub-kollektion-underline{
+    display: flex;
+    margin: auto;
+    width: 1755px;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: #706557;
+}
+
+
 /*Set Seite -> Headline*/
 .set-headline-container{
     width: 100%;
     display: flex;
     margin-top: 40px;
-    margin-bottom: 105px;
+    margin-bottom: 60px;
 }
 
 .set-headline-image-container{
@@ -708,7 +788,6 @@ text-align: center;
 
 .set-headline-name{
     font-family: merriweather;
-    font-style: italic;
     font-weight: 900;
     font-size: 83px;
     color: #4f473d;
@@ -720,12 +799,21 @@ text-align: center;
     font-family: Montserrat;
     font-size: 27px;
     margin-right: 165px;
-    margin-top: 31px;
+    margin-top: 12px;
     line-height: 37px;
     letter-spacing: 1px;
+    font-weight: 400;
+    font-style: italic;
 }
 
-
+.set-headline-underline{
+    display: flex;
+    margin: auto;
+    width: 1755px;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: #706557;
+}
 
 /*Set Seite -> Grid*/
 
@@ -733,7 +821,7 @@ text-align: center;
     display: grid;
     justify-content: space-between;
     grid-template-columns: auto auto auto auto;
-    margin-top: 40px;
+    margin-top: 67px;
     margin-left: 54px;
     margin-right: 54px;
 }
@@ -752,9 +840,9 @@ text-align: center;
     transition: transform .4s ease;
 }
 
-.set-image:hover{
+/*.set-image:hover{
     transform: scale(1.04);
-}
+}           Image Preview Zoom, kann jederzeit wieder aktiviert werden*/
 
 .upright {
     object-fit: contain;
@@ -771,6 +859,10 @@ text-align: center;
     background-color: #777169;
 }
 
+.upright-purp{
+    object-fit: contain;
+    background-color: #502F3A;
+}
 
 
 /*legal Content Container*/
@@ -794,4 +886,42 @@ text-align: center;
     color: #776B5D;
 }
 
+/*Über Uns Page*/
 
+.über-uns-container{
+    margin:auto;
+    width: 1500px;
+    padding-top: 44px;
+}
+
+.über-uns-header-images-container{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 20px;
+}
+
+.über-uns-header-image{
+    width: 614px;
+    height: 341px;
+    object-fit: cover;
+    display: flex;
+}
+
+.über-uns-text{
+    text-align: left;
+    display: inline-block;
+    margin: 0px 370px
+}
+
+.über-uns-text p{
+    font-family: Rubik;
+    font-size: 22px;
+    color: #776B5D;
+}
+
+.über-uns-text p a{
+    font-family: Rubik;
+    font-size: 22px;
+    color: rgb(184, 0, 0);
+}
