@@ -10,11 +10,6 @@ a{
 }
 
 /*Scrollbar Settings*/
-/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
-/** {
-  scrollbar-width: thin;
-  scrollbar-color: #776B5D #B0A695;
-}*/
 
 /* Chrome, Edge and Safari */
 *::-webkit-scrollbar {
@@ -227,6 +222,7 @@ nav ul li ul li a:hover::after{
     font-weight: 400;
 }
 
+
 .introduction{
     text-align: center;
     color: #776B5D;
@@ -238,20 +234,24 @@ nav ul li ul li a:hover::after{
 }
 
 .button-container{
-    margin-top: 40px;
+    margin-top: -16px;
+    margin-bottom: 100px;
     Display: flex;
     justify-content: center;
 }
 
 .learn-more{
-       padding: 10px;
-       border: none;
-       font-family: Merriweather;
-       font-size: 19px;
-       font-weight: 400;
-       background-color: #776B5D;
-       color: #F3EEEA;
-       border: none;
+    width:330px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    font-family: Rubik;
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    background-color: #776B5D;
+    color: #F3EEEA;
+    border: none;
 }
 
 .learn-more:hover{
@@ -262,11 +262,11 @@ nav ul li ul li a:hover::after{
 /*Index Page -> Categories*/
 
 .categories-container{
-    padding-top: 190px;
+    padding-top: 134px;
     display: flex;
     justify-content: space-around;
     margin: 0 90px;
-    padding-bottom: 150px;
+    padding-bottom: 200px;
     
 }
 
@@ -352,7 +352,28 @@ text-align: center;
 .categorie-name:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
+}
+
+.categories-underline{
+    display: flex;
+    margin: auto;
+    width: 1150px;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: #776B5D;
+}
+
+/*Index Page -> text + Slideshow*/
+
+.main-page-text{
+    text-align: center;
+    color: #776B5D;
+    font-size: 35px;
+    font-weight: 300;
+    margin-left: 225px;
+    margin-right: 225px;
+    margin-top: 88px;
+}
 
 /*Kollektion Page -> Banner*/
 
@@ -867,7 +888,7 @@ text-align: center;
 
 /*legal Content Container*/
 
-.legal-content-container{
+.site-end-content-container{
     margin-top: 20px;
     background-color: #EBE3D5;
     padding-top: 2px;
@@ -886,12 +907,38 @@ text-align: center;
     color: #776B5D;
 }
 
+/*Socials*/
+
+.social-content-container{
+    justify-content: space-around;
+    display: flex;
+    margin-left: 800px;
+    margin-right: 800px;
+    margin-top: 11px;
+    margin-bottom: 30px;
+}
+
+.social-content-container button{
+    justify-content: center;
+    display: flex;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.fa{
+    color: #776B5D;
+    font-size: 40px;
+}
+
 /*Über Uns Page*/
 
 .über-uns-container{
     margin:auto;
     width: 1500px;
     padding-top: 44px;
+    justify-content: center;
 }
 
 .über-uns-header-images-container{
@@ -924,4 +971,43 @@ text-align: center;
     font-family: Rubik;
     font-size: 22px;
     color: rgb(184, 0, 0);
+}
+
+/*Under Construction*/
+
+.under-construction{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 190px 150px;
+    padding-bottom: 160px;
+}
+
+.under-construction h1{
+    font-size: 70px;
+    font-family: Rubik;
+    color: #776B5D;
+    text-align: center;
+}
+
+.return-to-index{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.return-to-index button{
+    width: 330px;
+    height: 30px;
+    border: none;
+    background-color: #776B5D;
+    color: #F3EEEA;
+    font-family: Rubik;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.return-to-index button:hover{
+    background-color: #574e44;
+    color: #c9c4bf;
 }

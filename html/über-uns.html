@@ -8,7 +8,8 @@
     <link rel="shortcut icon" type="x-icon" href="../images/logo-creme.png">
     <link href="../css/style.css" rel="stylesheet" type="text/css"><!--link css-->
     <link href="../css/stylezoom.css" rel="stylesheet" type="text/css"><!--link css-->
-    <link href="../css/styleset.css" rel="stylesheet" type="text/css"><!--link css-->
+    <link href="../css/styleslideshow.css" rel="stylesheet" type="text/css"><!--link css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--link css-->
 
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,14 +42,14 @@
         </ul>
     </nav>
     <div class="main-container">
-            <div class="über-uns-header-images-container">
-                <img class="über-uns-header-image" src="../images/collection/6_Schachzimmer Vitrinen/20231013_100515.jpg" style="object-position: 50% 32%; margin-left: 32px;">
-                <img class="über-uns-header-image" src="../images/collection/6_Schachzimmer Vitrinen/20231013_100453.jpg" style="object-position: 50% 27%;">
-                <img class="über-uns-header-image" src="../images/collection/6_Schachzimmer Vitrinen/20231013_100542.jpg" style="object-position: 50% 31%; margin-right: 32px;">
-            </div>
+        <div class="über-uns-header-images-container">
+            <div  data-zoom-image><img class="über-uns-header-image" src="../images/collection/6_Schachzimmer Vitrinen/20231013_100515.jpg" style="object-position: 50% 32%; margin-left: 32px;"></div>
+            <div  data-zoom-image><img class="über-uns-header-image" src="../images/collection/6_Schachzimmer Vitrinen/20231013_100453.jpg" style="object-position: 50% 27%;"></div>
+            <div  data-zoom-image><img class="über-uns-header-image" src="../images/collection/6_Schachzimmer Vitrinen/20231013_100542.jpg" style="object-position: 50% 31%; margin-right: 32px;"></div>
+        </div>
         <div class="über-uns-container">
             <div class="über-uns-text">
-                <p>Herzlich willkommen auf der Schach-Kollektion! <br><br>
+                <p>Herzlich willkommen bei der Schach-Kollektion! <br><br>
                 Unsere Leidenschaft für Schach und Schachspiele erstreckt sich über Jahrzehnte und hat uns dazu inspiriert, die Schach-Kollektion ins Leben zu rufen. <br><br>
                 Diese Website wurde von mir,<a href="steckbrief-samuel.html"> Samuel Dippert</a> entwickelt und gebaut, unterstützt von meinem Vater Arno, der großzügig Bilder seiner umfangreichen Sammlung zur Verfügung gestellt hat.<br>
                 Der Start dieser Website markierte den Beginn meiner Vorbereitung auf meine Ausbildung zum Fachinformatiker. <br>
@@ -61,18 +62,35 @@
                 Vielen Dank für deinen Besuch und viel Spaß beim Stöbern!</p>
             </div>
         </div>
+        <div class="slideshow-container" style="padding: 50px 0px;">
+            <div class="mySlides fade" data-zoom-image>
+                <img class="über-uns-slideshow" src="../images/collection/6_Schachzimmer Vitrinen/20231013_100738.jpg">
+            </div>
+            <div class="mySlides fade" data-zoom-image>
+                <img class="über-uns-slideshow" src="../images/collection/6_Schachzimmer Vitrinen/20231013_100947.jpg">
+            </div>
+            <div class="mySlides fade" data-zoom-image>
+                <img class="über-uns-slideshow" src="../images/collection/6_Schachzimmer Vitrinen/20231013_100809.jpg">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
     </div>
-
-
-
-    <div class="legal-content-container">
+    <div class="site-end-content-container">
+        <div class="social-content-container">
+            <a href="https://www.linkedin.com/in/samuel-dippert-815997274/"><Button><i class="fa fa-linkedin-square"></i></Button></a>
+            <a href="https://github.com/Samueldprt"><Button><i class="fa fa-github-square"></i></Button></a>
+            <a href="mailto:samueldippert04@gmail.com"><button id="btnOutlook"><i class="fa fa-envelope-square"></i></Button></a>
+            <Button onclick="copyLinkFunction()"><i class="fa fa-share-alt-square"></i></Button>
+        </div>
         <div class="legal-content">
-            <div><a href="">Über Uns</a></div>
-            <div><a href="">Privacy Policy</a></div>
-            <div><a href="">Impressum</a></div>
+            <div><a href="über-uns.html">Über Uns</a></div>
+            <div><a href="datenschutz.html">Datenschutz</a></div>
+            <div><a href="impressum.html">Impressum</a></div>
         </div>
     </div>
     <script type="text/javascript" src="../js/script.js"></script>
     <script type="text/javascript" src="../js/scriptzoom.js"></script>
+    <script type="text/javascript" src="../js/scriptslideshow.js"></script>
 </body>
 </html>
