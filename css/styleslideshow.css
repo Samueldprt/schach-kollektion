@@ -88,7 +88,7 @@
 .über-uns-slideshow{
     margin: auto;
     display: block;
-    width: 1000px;
+    width: 100%;
     height: 600px;
     object-fit: cover;
 }

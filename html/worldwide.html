@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worldwide</title>
+    <script src="https://www.webglearth.com/v2/api.js"></script>
+    <script type="text/javascript" src="../js/scriptglobe.js"></script>
+    <link href="../css/styleglobe.css" rel="stylesheet" type="text/css"><!--link css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet"> <!--Rubik-->
+    <script>
+      function initialize() {
+        var earth = new WE.map('earth_div');
+        earth.setView([46.8011, 8.2266], 2);
+        WE.tileLayer('https://webglearth.github.io/webglearth2-offline/{z}/{x}/{y}.jpg', {
+          tileSize: 256,
+          bounds: [[-85, -180], [85, 180]],
+          minZoom: 0,
+          maxZoom: 16,
+          attribution: 'WebGLEarth example',
+          tms: true
+        }).addTo(earth);
+        var marker = WE.marker([53, 10]).addTo(earth);
+        marker.bindPopup("<b>Selenus <span> klicke auf das Bild!</span> </b> <a href=selenus.html target=”_blank”><img class=pop-up-image src=../images/collection/globe-images/selenus.jpg></a> <br> <p>Die Selenus Schachsets waren typisch für Deutschland und Nordeuropa und sind nach Gustavus Selenus benannt, dem Pseudonym von Augustus dem Jüngeren, Herzog von Braunschweig-Lüneburg. Er war der Autor von ´Das Schach- oder Königsspiel´, einem wichtigen Schachlehrbuch, das im 17. Jahrhundert veröffentlicht wurde.</p>", {maxWidth: 400, closeButton: true});
+
+        var marker2 = WE.marker([30.058056, 31.228889]).addTo(earth);
+        marker2.bindPopup("<b>Ägypten-Sammlung <span> klicke auf das Bild!</span> </b> <a href=ägypten-sammlung.html target=”_blank”><img class=pop-up-image src=../images/collection/globe-images/agypten.jpg></a> <br> <p>Schachsets im Stil des antiken Ägyptens zeichnen sich durch ihre einzigartige ästhetische Schönheit aus. Inspiriert von der reichen ägyptischen Kultur, sind sie oft mit Hieroglyphen, Pharaonen und Symbolen verziert. Die stilisierten Figuren erinnern an antike Kunstwerke, und die Verwendung von Materialien wie Stein, Holz oder Keramik verstärkt ihren archaischen Charakter.</p>", {maxWidth: 400, closeButton: true});
+
+        var markerCustom = WE.marker([50, -9], '/img/logo-webglearth-white-100.png', 100, 24).addTo(earth);
+
+      }
+    </script>
+    <style type="text/css">
+      html, body{padding: 0; margin: 0;}
+      #earth_div{top: 0; right: 0; bottom: 0; left: 0;
+                 position: absolute !important;
+                 background-image: -webkit-gradient(
+                   linear,
+                   left bottom,
+                   left top,
+                   color-stop(0, rgb(253,253,253)),
+                   color-stop(0.15, rgb(253,253,253)),
+                   color-stop(0.53, rgb(223,223,223)),
+                   color-stop(0.56, rgb(255,255,255)),
+                   color-stop(1, rgb(253,253,253))
+                   );
+                 background-image: -moz-linear-gradient(
+                   center bottom,
+                   rgb(253,253,253) 0%,
+                   rgb(253,253,253) 15%,
+                   rgb(223,223,223) 53%,
+                   rgb(255,255,255) 56%,
+                   rgb(253,253,253) 100%
+                   );
+      }
+    </style>
+    <title>WebGL Earth API: custom maps tiles on a 3D globe</title>
+    <meta name="description" content="This example shows a custom map rendered by MapTiler Desktop on a 3D globe. This 3D digital globe for web and mobile devices is completely free and open-source.">
+  </head>
+  <body onload="initialize()">
+    <div id="earth_div"></div>
+  </body>
+</html>

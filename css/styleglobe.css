@@ -1,0 +1,22 @@
+.pop-up-image{
+  width: 400px;
+  height: 230px;
+  object-fit: cover;
+  cursor: alias;
+}
+
+b{
+  font-size: 24px;
+  font-family: Rubik;
+  font-weight: 700;
+}
+
+p{
+  font-family: Rubik;
+  font-size: 16px;
+}
+
+span{
+  font-size: 12px;
+  color: rgb(0,0,0,0.4);
+}
