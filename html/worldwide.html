@@ -5,11 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Worldwide</title>
     <script src="https://www.webglearth.com/v2/api.js"></script>
-    <script type="text/javascript" src="../js/scriptglobe.js"></script>
+    <script type="text/javascript" src="../js/scriptpopup.js"></script>
+    <link rel="shortcut icon" type="x-icon" href="../images/logo-creme.png">
     <link href="../css/styleglobe.css" rel="stylesheet" type="text/css"><!--link css-->
+    <link href="../css/stylepopup.css" rel="stylesheet" type="text/css"><!--link css-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet"> <!--Rubik-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Font Awesome-->
     <script>
       function initialize() {
         var earth = new WE.map('earth_div');
@@ -27,6 +30,18 @@
 
         var marker2 = WE.marker([30.058056, 31.228889]).addTo(earth);
         marker2.bindPopup("<b>Ägypten-Sammlung <span> klicke auf das Bild!</span> </b> <a href=ägypten-sammlung.html target=”_blank”><img class=pop-up-image src=../images/collection/globe-images/agypten.jpg></a> <br> <p>Schachsets im Stil des antiken Ägyptens zeichnen sich durch ihre einzigartige ästhetische Schönheit aus. Inspiriert von der reichen ägyptischen Kultur, sind sie oft mit Hieroglyphen, Pharaonen und Symbolen verziert. Die stilisierten Figuren erinnern an antike Kunstwerke, und die Verwendung von Materialien wie Stein, Holz oder Keramik verstärkt ihren archaischen Charakter.</p>", {maxWidth: 400, closeButton: true});
+
+        var marker3 = WE.marker([7.82518900804363, 20.48582588624964]).addTo(earth);
+        marker3.bindPopup("<b>Afrika-Sammlung <span> klicke auf das Bild!</span> </b> <a href=afrika-sammlung.html target=”_blank”><img class=pop-up-image src=../images/collection/globe-images/afrika.jpg></a> <br> <p>Schachspiele aus Afrika spiegeln die reiche kulturelle Vielfalt des Kontinents wider. Sie werden oft aus lokalen Materialien wie Holz, Stein oder Elfenbein hergestellt und mit kunstvollen Schnitzereien verziert. Diese Schachsets erzählen Geschichten von afrikanischer Kultur und Geschichte und werden von Menschen jeden Alters aktiv gespielt. Sie tragen zur Förderung des Schachs in Afrika bei und fördern den kulturellen Austausch und das Gemeinschaftsgefühl.</p>", {maxWidth: 400, closeButton: true});
+
+        var marker4 = WE.marker([39.53727875513196, -102.11320428408789]).addTo(earth);
+        marker4.bindPopup("<b>American Civil War <span> klicke auf das Bild!</span> </b> <a href=american-civil-war.html target=”_blank”><img class=pop-up-image src=../images/collection/globe-images/civil-war.jpg></a> <br> <p>Der Amerikanische Bürgerkrieg (1861-1865) war ein entscheidendes Ereignis in der Geschichte der Vereinigten Staaten. Die Nordstaaten und Südstaaten kämpften um Fragen der Sklaverei, der Staatsrechte und der territorialen Expansion. Dieser Konflikt prägte die amerikanische Geschichte nachhaltig. An dieses Ereignis angelehnt ist das American Civil War Schachspiel entstanden.</p>", {maxWidth: 400, closeButton: true});
+
+        var marker5 = WE.marker([7.82518900804363, 20.48582588624964]).addTo(earth);
+        marker5.bindPopup("<b>Afrika-Sammlung <span> klicke auf das Bild!</span> </b> <a href=afrika-sammlung.html target=”_blank”><img class=pop-up-image src=../images/collection/globe-images/afrika.jpg></a> <br> <p>Schachspiele aus Afrika spiegeln die reiche kulturelle Vielfalt des Kontinents wider. Sie werden oft aus lokalen Materialien wie Holz, Stein oder Elfenbein hergestellt und mit kunstvollen Schnitzereien verziert. Diese Schachsets erzählen Geschichten von afrikanischer Kultur und Geschichte und werden von Menschen jeden Alters aktiv gespielt. Sie tragen zur Förderung des Schachs in Afrika bei und fördern den kulturellen Austausch und das Gemeinschaftsgefühl.</p>", {maxWidth: 400, closeButton: true});
+
+        var marker6 = WE.marker([7.82518900804363, 20.48582588624964]).addTo(earth);
+        marker6.bindPopup("<b>Afrika-Sammlung <span> klicke auf das Bild!</span> </b> <a href=afrika-sammlung.html target=”_blank”><img class=pop-up-image src=../images/collection/globe-images/afrika.jpg></a> <br> <p>Schachspiele aus Afrika spiegeln die reiche kulturelle Vielfalt des Kontinents wider. Sie werden oft aus lokalen Materialien wie Holz, Stein oder Elfenbein hergestellt und mit kunstvollen Schnitzereien verziert. Diese Schachsets erzählen Geschichten von afrikanischer Kultur und Geschichte und werden von Menschen jeden Alters aktiv gespielt. Sie tragen zur Förderung des Schachs in Afrika bei und fördern den kulturellen Austausch und das Gemeinschaftsgefühl.</p>", {maxWidth: 400, closeButton: true});
 
         var markerCustom = WE.marker([50, -9], '/img/logo-webglearth-white-100.png', 100, 24).addTo(earth);
 
@@ -61,5 +76,29 @@
   </head>
   <body onload="initialize()">
     <div id="earth_div"></div>
+    <div class="worldwide-return-button-container">
+      <a href="../index.html">
+        <button class="worldwide-return-button">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </button>
+      </a>   
+    </div>
+    <div class="worldwide-question-button-container">
+        <button onclick="openPopup()"class="worldwide-question-button">
+          <i class="fa fa-question" aria-hidden="true"></i>
+        </button>
+    </div>
+    <div class="popup">
+      <button onclick="closePopup()" id="closePopup">&times;</button>
+      <p class="popup-headline">Wilkommen bei Schach Weltweit!</p>
+      <p class="popup-text">
+        Hier können Sie spielerisch einiges über die Herkunft und Geschichte unserer Schachspiele erfahren.<br><br>
+        Benutzen Sie den Globus, indem Sie ihn mit Ihrem Cursor drehen.<br>
+        Klicken Sie auf die blauen Marker, um Informationen und Bilder einiger unserer Schachspiele zu öffnen. <br>
+        Wenn Sie auf das jeweilige Bild klicken, können Sie alle Bilder des jeweiligen Schachsets ansehen. <br><br>
+        Viel Spaß beim Entdecken!
+      </p>
+      <p class="popup-button" onclick="closePopup()">Los gehts!</p>
+  </div>
   </body>
 </html>

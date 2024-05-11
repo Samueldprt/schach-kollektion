@@ -20,3 +20,51 @@ span{
   font-size: 12px;
   color: rgb(0,0,0,0.4);
 }
+
+.earth_div{
+  background-color: aqua;
+}
+
+.worldwide-return-button-container{
+  position: absolute;
+  top: 67px;
+  left: 72px;
+}
+
+.worldwide-return-button{
+  border-radius: 10px;
+  font-size: 44px;
+  color: white;
+  border-color: transparent;
+  background-color: rgb(223,223,223);
+  cursor: pointer;
+  width: 58px;
+}
+
+.worldwide-return-button:hover{
+  background-color: rgb(189, 189, 189);
+}
+
+.worldwide-question-button-container{
+  position: absolute;
+  top: 67px;
+  left: 148px;
+}
+
+.worldwide-question-button{
+  border-radius: 10px;
+  font-size: 44px;
+  color: white;
+  border-color: transparent;
+  background-color: rgb(223,223,223);
+  cursor: pointer;
+  width: 58px;
+}
+
+.worldwide-question-button:hover{
+  background-color: rgb(189, 189, 189);
+}
+
+.cesium-credit-textContainer{
+  display: none;
+}
