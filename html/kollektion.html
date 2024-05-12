@@ -20,6 +20,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet"> <!--Rubik-->
     </head>
     <body>
+        
         <nav>
             <a href="../index.html"><img class="logo" src="../images/logo.png"></a>
             <a href="../index.html"><h1 class="titel">Schach Kollektion</h1></a>
@@ -49,9 +50,9 @@
             <div id="styleDropdown" class="dropdown-container">
                 <div class="dropdown-content-container" id="myBtnContainer">
                     <button class="style-btn active" onclick="filterSelection('all')">Alle</button>
-                    <button class="style-btn" onclick="filterSelection('modern')">Modern</button>
-                    <button class="style-btn" onclick="filterSelection('klassisch')">Klassisch</button>
-                    <button class="style-btn" onclick="filterSelection('ausergewöhnlich')">Außergewöhnlich</button>
+                    <button class="style-btn" onclick="filterSelection('modern')" id="modern">Modern</button>
+                    <button class="style-btn" onclick="filterSelection('klassisch')" id="klassisch">Klassisch</button>
+                    <button class="style-btn" onclick="filterSelection('ausergewöhnlich')" id="ausergewöhnlich">Außergewöhnlich</button>
                     <button class="style-btn" onclick="filterSelection('fantasy')">Fantasy</button>
                     <button class="style-btn" onclick="filterSelection('franchise')">Franchise</button>
                     <button class="style-btn" onclick="filterSelection('alt')">Alt</button>
@@ -380,5 +381,6 @@
             </div>
         </div>
         <script type="text/javascript" src="../js/script.js"></script>
+        <script>window.onload = applyFilterOnLoad;</script>
     </body>
 </html>

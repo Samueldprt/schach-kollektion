@@ -155,19 +155,23 @@ nav ul li ul li:hover{
     display: block;
 }
 
-.option-container{
-    padding: 16px 20px;
+.menü-container:hover .option-container{
     display: flex;
 }
 
-nav ul li ul li a{
+.option-container{
+    padding: 16px 20px;
+    display: none;
+}
+
+.option-container li a{
     color: white;
     padding: 0px;
     font-size: 20px;
     margin: 0px;
 }
 
-nav ul li ul li a::after{
+.option-container li a::after{
     content: '';
     position: absolute;
     width: 100%;
@@ -181,11 +185,12 @@ nav ul li ul li a::after{
     transition: transform .30s ease-out;
 }
 
-nav ul li ul li a:hover::after{
+.option-container li a:hover::after{
     transform: scaleX(1);
     transform-origin: bottom left;
     color: white;
 }
+
 
 /*Index Page -> Banner*/
 
@@ -963,7 +968,7 @@ text-align: center;
 }
 
 .über-uns-header-image{
-    width: 614px;
+    width: 627px;
     height: 341px;
     object-fit: cover;
     display: flex;

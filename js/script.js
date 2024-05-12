@@ -11,7 +11,7 @@ function copyLinkFunction() {
   navigator.clipboard.writeText(copyText.value);
 
   // Alert the copied text
-  alert("Link in zwischenablage gespeichert");
+  alert("Link in zwischenablage kopiert");
 }
 
 
@@ -215,4 +215,41 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" selected", "");
     this.className += " selected";
   });
+}
+
+
+////On Load///
+
+function applyFilterOnLoad() {
+  var urlParams = new URLSearchParams(window.location.search);
+  var filterParam = urlParams.get('filter');
+  var classModern = document.getElementById("modern")
+  var classKlassisch = document.getElementById("klassisch")
+  var classAusergewöhnlich = document.getElementById("ausergewöhnlich")
+  var styleDropdown = document.getElementById("styleDropdown");
+  if (filterParam === 'modern') {
+      filterSelection('modern');
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      modern.className += " active";
+      styleDropdown.style.display = "block"
+  }
+  else {
+    if (filterParam === 'klassisch') {
+      filterSelection('klassisch');
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      klassisch.className += " active";
+      styleDropdown.style.display = "block"
+  }
+  else{
+    if (filterParam === 'ausergewöhnlich') {
+      filterSelection('ausergewöhnlich');
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      ausergewöhnlich.className += " active";
+      styleDropdown.style.display = "block"
+  }
+  }
+  }
 }
