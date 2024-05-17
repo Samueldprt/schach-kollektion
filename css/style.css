@@ -91,7 +91,7 @@ nav ul{
 nav ul:hover .dropdown-container-1 {
     transform: translateY(0);
     opacity: 1;
-    height: 224px
+    height: 173px
 }
 
 nav ul li{
@@ -243,7 +243,6 @@ nav ul li ul li:hover{
 }
 
 .button-container{
-    margin-top: -16px;
     margin-bottom: 100px;
     Display: flex;
     justify-content: center;
@@ -252,7 +251,6 @@ nav ul li ul li:hover{
 .learn-more{
     width:330px;
     height: 40px;
-    padding: 10px;
     border: none;
     font-family: Rubik;
     font-size: 19px;
