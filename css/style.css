@@ -1028,3 +1028,95 @@ text-align: center;
     background-color: #574e44;
     color: #c9c4bf;
 }
+
+/*impressum Page*/
+
+.impressum-container{
+    margin: auto;
+    padding-left: 524px;
+    padding-right: 524px;
+    padding-top: 67px;
+    padding-bottom: 50px;
+}
+
+.impressum-h1{
+    color: #776B5D;
+    font-family: Rubik;
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.impressum-h2{
+    color: #776B5D;
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 29px;
+    padding-top: 55px;
+}
+
+.impressum-p{
+    color: #776B5D;
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 7px;
+    line-height: 27px;
+}
+
+/*Datenschutz Page*/
+
+.datenschutz-container{
+    padding-left: 524px;
+    padding-right: 524px;
+    padding-top: 67px;
+    padding-bottom: 50px;
+}
+
+.datenschutz-container h1{
+    color: #776B5D;
+    font-family: Rubik;
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.datenschutz-container h2{
+    color: #776B5D;
+    font-family: Rubik;
+    font-weight: 600;
+    font-size: 34px;
+    padding-top: 55px;
+}
+
+.datenschutz-container h3{
+    color: #776B5D;
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 23px;
+    padding-top: 15px;
+    line-height: 27px;
+}
+
+.datenschutz-container h4{
+    color: #776B5D;
+    font-family: Rubik;
+    font-size: 17px;
+    padding-top: 5px;
+}
+
+.datenschutz-container p{
+    color: #776B5D;
+    font-family: Rubik;
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.datenschutz-container li{
+    color: #776B5D;
+    font-family: Rubik;
+}
+
+.datenschutz-container a{
+    color: #776B5D;
+    text-decoration: underline;
+    font-weight: 500;
+}
