@@ -5,10 +5,10 @@
 //////////////////////////COPY LINK TO CLIPBOARD//////////////////////////
 function copyLinkFunction() {
   // Get the text field
-  let copyText = "file:///f%3A/Dokumente/GitHub/Schach-Kollektion/index.html";
+  let copyText = "https://schach-kollektion.de/";
 
    // Copy the text inside the text field
-  navigator.clipboard.writeText(copyText.value);
+  navigator.clipboard.writeText(copyText);
 
   // Alert the copied text
   alert("Link in zwischenablage kopiert");

@@ -58,7 +58,7 @@ nav{
     height: 85px;
     background-color: #EBE3D5;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 2;
+    z-index: 1000;
 }
 
 .logo{

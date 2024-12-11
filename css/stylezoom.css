@@ -8,7 +8,7 @@ Image Zoom JS v0.0.1 | MIT License | https://github.com/alecrios/image-zoom-js
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	z-index: 900;
+	z-index: 1001;
 	background-color: rgba(255, 255, 255, 1);
 	opacity: 0;
 	transition: opacity 400ms ease;
@@ -29,7 +29,7 @@ Image Zoom JS v0.0.1 | MIT License | https://github.com/alecrios/image-zoom-js
 }
 
 [data-zoom-image='active'] {
-	z-index: 1000;
+	z-index: 1002;
 	cursor: zoom-out;
 	overflow: visible;
 }
